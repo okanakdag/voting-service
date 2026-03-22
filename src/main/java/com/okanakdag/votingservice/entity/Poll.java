@@ -19,4 +19,8 @@ public class Poll {
     private LocalDateTime deadline;
 
     private LocalDateTime createdAt;
+
+    @ManyToOne
+    @JoinColumn(name = "creator_id", nullable = false)
+    private User creator;
 }

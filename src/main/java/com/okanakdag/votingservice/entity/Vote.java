@@ -16,4 +16,16 @@ public class Vote {
     private Long id;
 
     private LocalDateTime createdAt;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;
+
+    @ManyToOne
+    @JoinColumn(name = "poll_id", nullable = false)
+    private Poll poll;
+
+    @ManyToOne
+    @JoinColumn(name = "selected_option_id", nullable = false)
+    private Option selectedOption;
 }

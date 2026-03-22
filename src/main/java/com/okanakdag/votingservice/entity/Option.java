@@ -14,4 +14,8 @@ public class Option {
     private Long id;
 
     private String text;
+
+    @ManyToOne
+    @JoinColumn(name = "poll_id", nullable = false)
+    private Poll poll;
 }
