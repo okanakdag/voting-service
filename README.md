@@ -1,5 +1,5 @@
 ## Overview
-A Spring Boot REST API for creating polls, voting, and viewing results with deadline-based constraints.
+A Spring Boot REST API for creating polls, voting, and viewing results with deadline-based constraints. In progress.
 
 ## Features
 - Create poll with multiple options
